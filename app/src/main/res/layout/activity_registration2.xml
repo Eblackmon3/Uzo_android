@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/registrationPageTwo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:background="?android:attr/listDivider" />
+
+
+        <LinearLayout
+            android:id="@+id/formOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Why do you want to work at UZO? " />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="#11000000"
+                    android:inputType="text" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="When are you the most free to pick up gigs? " />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Monday" />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton7"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:duplicateParentState="false"
+                                        android:isScrollContainer="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="8am-12pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton6"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="1pm-5pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton5"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="6pm-10pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton4"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="11pm-3am"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Free all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Busy all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                                </RadioGroup>
+                            </TableRow>
+                            />
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView15"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Tuesday " />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton37"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:duplicateParentState="false"
+                                        android:isScrollContainer="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="8am-12pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton36"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="1pm-5pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton35"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="6pm-10pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton34"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="11pm-3am"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton33"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Free all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton32"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Busy all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                                </RadioGroup>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Wednesday " />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton47"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:duplicateParentState="false"
+                                        android:isScrollContainer="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="8am-12pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton46"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="1pm-5pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton45"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="6pm-10pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton44"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="11pm-3am"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton43"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Free all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton42"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Busy all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                                </RadioGroup>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView19"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Thursday " />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton57"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:duplicateParentState="false"
+                                        android:isScrollContainer="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="8am-12pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton56"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="1pm-5pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton55"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="6pm-10pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton54"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="11pm-3am"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton53"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Free all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton52"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Busy all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                                </RadioGroup>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView20"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Friday " />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton17"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:duplicateParentState="false"
+                                        android:isScrollContainer="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="8am-12pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton18"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="1pm-5pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton19"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="6pm-10pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton20"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="11pm-3am"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton21"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Free all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton22"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Busy all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                                </RadioGroup>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView21"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Saturday " />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton87"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:duplicateParentState="false"
+                                        android:isScrollContainer="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="8am-12pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton86"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="1pm-5pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton85"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="6pm-10pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton84"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="11pm-3am"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton83"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Free all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton82"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Busy all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                                </RadioGroup>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Sunday " />
+
+                                <RadioGroup
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton77"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:duplicateParentState="false"
+                                        android:isScrollContainer="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="8am-12pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton76"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="1pm-5pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton75"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="6pm-10pm"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton74"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="11pm-3am"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton73"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:checked="false"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Free all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                                    <CheckBox
+                                        android:id="@+id/radioButton72"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:layoutDirection="rtl"
+                                        android:scaleX=".7"
+                                        android:scaleY=".7"
+                                        android:text="Busy all day"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+                                </RadioGroup>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:text="Work I can do (Select all that apply)" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Bar Staff and Bartending" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Cashier" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Cleaning" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Data Entry" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Desk Assistance" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Driving and Delivery" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Event Security" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Event Set-up/Break-down" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Food Services" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <CheckBox
+                                android:id="@+id/checkBox4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Moving" />
+
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="Are you able to lift at least 50lbs?" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RadioButton
+                        android:id="@+id/radioButton9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleX=".7"
+                        android:scaleY=".7"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleX=".7"
+                        android:scaleY=".7"
+                        android:text="No" />
+                </RadioGroup>
+                </LinearLayout>
+            </android.support.design.widget.TextInputLayout>
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="How do you get around?" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Car" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Bike" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <CheckBox
+                                android:id="@+id/checkBox13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:scaleX=".7"
+                                android:scaleY=".7"
+                                android:text="Bus" />
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Back" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Next" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
