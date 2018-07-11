@@ -3,6 +3,9 @@ package com.example.uzo.uzo;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -19,6 +22,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -29,7 +33,16 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.uzo.DataHandler.HTTPClient;
+import com.example.uzo.DataHandler.HTTPClientHandlerOnLoad;
+import com.example.uzo.DataHandler.Session;
+import com.google.firebase.iid.FirebaseInstanceId;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import static android.Manifest.permission.READ_CONTACTS;
@@ -38,6 +51,7 @@ import static android.Manifest.permission.READ_CONTACTS;
  * A login screen that offers login via email/password.
  */
 public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<Cursor> {
+    private Session session;
 
     /**
      * Id to identity READ_CONTACTS permission request.
@@ -61,9 +75,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private EditText mPasswordView;
     private View mProgressView;
     private View mLoginFormView;
+    private TextView createAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //GenerateToken();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         // Set up the login form.
@@ -82,11 +98,21 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
+        Button mEmailSignInButton =   (Button) findViewById(R.id.email_sign_in_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 attemptLogin();
+            }
+        });
+
+        createAccount = findViewById(R.id.createAccount);
+        createAccount.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(view.getContext(), RegistrationPage1Activity.class));
+
             }
         });
 
@@ -160,7 +186,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         View focusView = null;
 
         // Check for a valid password, if the user entered one.
-        if (!TextUtils.isEmpty(password) && !isPasswordValid(password)) {
+        if (!TextUtils.isEmpty(password) && !isPasswordValid(password, email)) {
             mPasswordView.setError(getString(R.string.error_invalid_password));
             focusView = mPasswordView;
             cancel = true;
@@ -171,7 +197,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             mEmailView.setError(getString(R.string.error_field_required));
             focusView = mEmailView;
             cancel = true;
-        } else if (!isEmailValid(email)) {
+        } else if (!isEmailValid(email, password)) {
             mEmailView.setError(getString(R.string.error_invalid_email));
             focusView = mEmailView;
             cancel = true;
@@ -190,12 +216,11 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         }
     }
 
-    private boolean isEmailValid(String email) {
-        //TODO: Replace this with your own logic
+    private boolean isEmailValid(String email, String Password) {
         return email.contains("@");
     }
 
-    private boolean isPasswordValid(String password) {
+    private boolean isPasswordValid(String password, String Email) {
         //TODO: Replace this with your own logic
         return password.length() > 4;
     }
@@ -306,7 +331,24 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         @Override
         protected Boolean doInBackground(Void... params) {
-            // TODO: attempt authentication against a network service.
+            JSONObject checkLogin= new JSONObject();
+            try{
+
+                checkLogin.put("email", mEmail);
+                checkLogin.put("password",mPassword);
+                HTTPClient check= new HTTPClient();
+                checkLogin=(check.postJSONRetObject(checkLogin.toString(),"check_student_login"));
+                if(checkLogin.get("student_id")!=null) {
+                    session=new Session(LoginActivity.this);
+                    session.setuserID(checkLogin.get("student_id").toString());
+                    return true;
+
+                }
+
+            }catch(Exception e){
+                Log.e("Error",e.toString() );
+
+            }
 
             try {
                 // Simulate network access.
@@ -322,9 +364,8 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     return pieces[1].equals(mPassword);
                 }
             }
+            return false;
 
-            // TODO: register the new account here.
-            return true;
         }
 
         @Override
@@ -333,7 +374,10 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
-                finish();
+                Log.i("student_id",session.getuserID());
+
+                startActivity(new Intent(LoginActivity.this, MyGigs.class));
+
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
@@ -346,5 +390,72 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
         }
     }
+    public void onBackPressed() {
+        //do nothing
+    }
+
+    /*
+     * Preparing the list data
+     */
+    private void prepareListData() {
+       ArrayList<String> listDataHeader;
+        HashMap<String, List<String>> listDataChild;
+        ArrayList job_ids;
+
+        SharedPreferences sharedPref = LoginActivity.this.getPreferences(Context.MODE_PRIVATE);
+        int lastJob = getResources().getInteger(R.integer.last_job_id);
+        lastJob= sharedPref.getInt(getResources().getResourceName(R.integer.last_job_id), lastJob);
+
+        JSONObject interestedStudent= new JSONObject();
+        JSONArray opJobs= new JSONArray();
+        try {
+            HTTPClientHandlerOnLoad handler = new HTTPClientHandlerOnLoad();
+            opJobs = new JSONArray(handler.execute("getJSONArray", handler.toString(), "get_open_jobs").get());
+            listDataHeader = new ArrayList<String>();
+            listDataChild = new HashMap<String, List<String>>();
+            job_ids= new ArrayList<>();
+            ArrayList<String> jobHolder= new ArrayList<>();
+            for (int i = 0; i < opJobs.length(); i++) {
+                listDataHeader.add(new JSONObject(opJobs.get(i).toString()).get("job_title").toString().trim());
+                jobHolder.add(new JSONObject(opJobs.get(i).toString()).get("company_name").toString().trim());
+                jobHolder.add(new JSONObject(opJobs.get(i).toString()).get("description").toString().trim());
+                jobHolder.add(new JSONObject(opJobs.get(i).toString()).get("rate").toString());
+                jobHolder.add(new JSONObject(opJobs.get(i).toString()).get("date").toString()+" "+
+                        new JSONObject(opJobs.get(i).toString()).get("start_time").toString());
+                jobHolder.add(new JSONObject(opJobs.get(i).toString()).get("date").toString()+" "+
+                        new JSONObject(opJobs.get(i).toString()).get("end_time").toString());
+                jobHolder.add(new JSONObject(opJobs.get(i).toString()).get("street").toString()+" "+
+                        new JSONObject(opJobs.get(i).toString()).get("city").toString()+" "+
+                        new JSONObject(opJobs.get(i).toString()).get("state").toString());
+                listDataChild.put(listDataHeader.get(i), jobHolder);
+                job_ids.add(new JSONObject(opJobs.get(i).toString()).get("job_id").toString());
+                Log.i("last commit job",new JSONObject(opJobs.get(i).toString()).get("job_id").toString());
+                Log.i("pref Job id",lastJob+"");
+                if(Integer.parseInt(new JSONObject(opJobs.get(i).toString()).get("job_id").toString())>lastJob){
+                    SharedPreferences.Editor editor = sharedPref.edit();
+                    editor.putInt(getResources().getResourceName(R.integer.last_job_id), Integer.parseInt(new JSONObject(opJobs.get(i).toString()).get("job_id").toString()));
+                    editor.apply();
+                }
+                jobHolder.add("Select This Job");
+                jobHolder=new ArrayList<>();
+
+
+            }
+
+        }catch(Exception e){
+            Log.e("Error", e.toString());
+            e.printStackTrace();
+        }
+
+    }
+
+    public void GenerateToken() {
+        // Get updated InstanceID token.
+        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
+        Log.i( "Genertating token","Refreshed token: " + refreshedToken);
+
+    }
+
+
 }
 

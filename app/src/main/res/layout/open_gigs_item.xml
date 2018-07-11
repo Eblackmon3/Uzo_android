@@ -7,11 +7,20 @@
         android:id="@+id/Item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:gravity="left"
-        android:textAllCaps="false"
-        android:textColorLink="@android:color/holo_green_light"
-        android:visibility="visible" />
+        android:textSize="17dip"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="?android:attr/expandableListPreferredChildPaddingLeft"  />
+
+    <Button
+        android:id="@+id/SelectJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="200dp"
+        android:textSize="17dip"
+        android:text = "Select Job"
+        android:minWidth="0dp"/>
 
 
 
