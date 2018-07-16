@@ -118,6 +118,18 @@
                 android:visibility="visible" />
             />
 
+            <TextView
+                android:id="@+id/forgotPasswrod"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:text="Forgot password"
+                android:textAllCaps="false"
+                android:textColorLink="#0000EE"
+                android:visibility="visible" />
+            />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

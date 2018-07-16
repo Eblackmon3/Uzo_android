@@ -394,21 +394,21 @@ public class RegistrationPage1Activity extends AppCompatActivity {
                 //call the http method and if successful then jump to the next page
                 JSONObject insertStudent= new JSONObject();
                 try {
-                    insertStudent.put("first_name", firstName.getText().toString());
-                    insertStudent.put("last_name", lastName.getText().toString());
-                    insertStudent.put("phone_number", phoneNumber.getText().toString());
+                    insertStudent.put("first_name", firstName.getText().toString().toLowerCase());
+                    insertStudent.put("last_name", lastName.getText().toString().toLowerCase());
+                    insertStudent.put("phone_number", phoneNumber.getText().toString().toLowerCase());
                     insertStudent.put("university", "UGA");
-                    insertStudent.put("date_of_birth", dob.getText().toString());
-                    insertStudent.put("email", email.getText().toString());
-                    insertStudent.put("major", major.getText().toString());
-                    insertStudent.put("year", year.getText().toString());
-                    insertStudent.put("password", password.getText().toString());
-                    insertStudent.put("description", studentID.getText().toString());
-                    insertStudent.put("state", state.getText().toString());
-                    insertStudent.put("city", city.getText().toString());
-                    insertStudent.put("street", street.getText().toString());
-                    insertStudent.put("apt", aptNum.getText().toString());
-                    insertStudent.put("zipcode", zipcode.getText().toString());
+                    insertStudent.put("date_of_birth", dob.getText().toString().toLowerCase());
+                    insertStudent.put("email", email.getText().toString().toLowerCase());
+                    insertStudent.put("major", major.getText().toString().toLowerCase());
+                    insertStudent.put("year", year.getText().toString().toLowerCase());
+                    insertStudent.put("password", password.getText().toString().toLowerCase());
+                    insertStudent.put("description", studentID.getText().toString().toLowerCase());
+                    insertStudent.put("state", state.getText().toString().toLowerCase());
+                    insertStudent.put("city", city.getText().toString().toLowerCase());
+                    insertStudent.put("street", street.getText().toString().toLowerCase());
+                    insertStudent.put("apt", aptNum.getText().toString().toLowerCase());
+                    insertStudent.put("zipcode", zipcode.getText().toString().toLowerCase());
 
                     HTTPClientHandlerOnLoad handleInsert= new HTTPClientHandlerOnLoad();
                     if(validate()){

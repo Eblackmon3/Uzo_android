@@ -9,7 +9,6 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,18 +16,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <service
-            android:name="com.example.uzo.firebaseController.MyFirebaseInstanceIDService">
+        <service android:name="com.example.uzo.firebaseController.MyFirebaseInstanceIDService">
             <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-
-        <service
-            android:name="com.example.uzo.firebaseController.MyFirebaseMessagingService">
+        <service android:name="com.example.uzo.firebaseController.MyFirebaseMessagingService">
             <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
@@ -53,9 +48,16 @@
         <activity
             android:name=".CreateNotificationActivity"
             android:label="@string/title_activity_create_notification"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ForgotPassword" />
+        <activity
+            android:name=".enterCode"
+            android:label="@string/title_activity_enter_code"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".creatNewPassword"
+            android:label="@string/title_activity_creat_new_password"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-
-
     </application>
 
 </manifest>

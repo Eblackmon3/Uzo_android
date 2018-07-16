@@ -76,6 +76,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mProgressView;
     private View mLoginFormView;
     private TextView createAccount;
+    private TextView forgotPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,6 +113,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             public void onClick(View view) {
 
                 startActivity(new Intent(view.getContext(), RegistrationPage1Activity.class));
+
+            }
+        });
+        forgotPassword = findViewById(R.id.forgotPasswrod);
+        forgotPassword.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(view.getContext(), ForgotPassword.class));
 
             }
         });

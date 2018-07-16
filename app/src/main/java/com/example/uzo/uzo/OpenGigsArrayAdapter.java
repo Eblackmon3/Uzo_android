@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.uzo.DataHandler.HTTPClientHandlerOnLoad;
 import com.example.uzo.DataHandler.Session;
@@ -100,7 +101,13 @@ public class OpenGigsArrayAdapter  extends BaseExpandableListAdapter implements 
                                 sendInterest.put("student_id", student);
                                 sendInterest.put("job_id", Integer.parseInt(getJobId(groupPosition).toString()));
                                 HTTPClientHandlerOnLoad handler= new HTTPClientHandlerOnLoad();
-                                Log.i("Inserted Student",handler.execute(handler.execute("postJSONRetObject",sendInterest.toString(),"insert_interested_student").get()).get());
+                                JSONObject studentResult=new JSONObject(handler.execute("postJSONRetObject",sendInterest.toString(),"insert_interested_student").get());
+                                Log.i("Result of insert",studentResult.toString());
+                                if(studentResult.get("result").equals("student not accepted")){
+                                    Toast.makeText(_context, "You have not been accepted by HKA, please wait to select jobs",
+                                            Toast.LENGTH_LONG).show();
+                                }
+
 
                             }catch(Exception e){
                                 Log.e("Error in adapter", e.toString());
