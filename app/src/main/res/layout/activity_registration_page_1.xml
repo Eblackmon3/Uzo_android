@@ -23,6 +23,7 @@
             android:layout_marginBottom="4dp"
             android:layout_marginTop="10dp"
             android:text="@string/registrationPageOne"
+            android:textColor="#66FFFFFF"
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
 
@@ -51,8 +52,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
                     android:hint="First Name"
+                    android:textColor="#CCFFFFFF"
                     android:inputType="textPersonName" />
 
             </android.support.design.widget.TextInputLayout>
@@ -66,7 +68,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Last Name"
                     android:inputType="textPersonName" />
 
@@ -81,7 +84,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Phone Number"
                     android:inputType="phone" />
 
@@ -96,7 +100,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Street"
                     android:inputType="textPostalAddress" />
 
@@ -111,7 +116,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Apt"
                     android:inputType="number" />
 
@@ -126,7 +132,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="City"
                     android:inputType="text" />
 
@@ -141,7 +148,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="State"
                     android:longClickable="false"
                     android:focusable="false"
@@ -158,7 +166,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Zipcode"
                     android:inputType="number" />
 
@@ -173,7 +182,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Date of Birth"
                     android:longClickable="false"
                     android:focusable="false"
@@ -193,7 +203,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Email Address"
                     android:inputType="textEmailAddress" />
 
@@ -217,7 +228,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Password"
                     android:inputType="textPassword" />
 
@@ -232,7 +244,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Re-Enter Password"
                     android:inputType="textPassword" />
 
@@ -247,7 +260,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Major"
                     android:longClickable="false"
                     android:focusable="false"
@@ -264,7 +278,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Year of school"
                     android:inputType="number" />
 
@@ -290,7 +305,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:hint="Student ID"
                     android:inputType="number"/>
 

@@ -23,6 +23,7 @@
             android:layout_marginBottom="4dp"
             android:layout_marginTop="10dp"
             android:text="@string/registrationPageTwo"
+            android:textColor="#CCFFFFFF"
             android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
 
@@ -46,6 +47,7 @@
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#CCFFFFFF"
                 android:text="Why do you want to work at UZO? " />
 
             <android.support.design.widget.TextInputLayout
@@ -58,7 +60,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
                     android:layout_marginBottom="8dp"
-                    android:background="#11000000"
+                    android:background="#33FFFFFF"
+                    android:textColor="#CCFFFFFF"
                     android:inputType="text" />
 
             </android.support.design.widget.TextInputLayout>
@@ -68,6 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:textColor="#CCFFFFFF"
                 android:text="When are you the most free to pick up gigs? " />
 
             <android.support.design.widget.TextInputLayout
@@ -96,6 +100,7 @@
                                     android:id="@+id/textView6"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:textColor="#66FFFFFF"
                                     android:text="Monday" />
 
                                 <RadioGroup
@@ -114,6 +119,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="8am-12pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -125,6 +132,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="1pm-5pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -136,6 +145,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="6pm-10pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -147,6 +158,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="11pm-3am"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -159,6 +172,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Free all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -170,6 +185,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Busy all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
                                 </RadioGroup>
@@ -184,6 +201,7 @@
                                     android:id="@+id/textView15"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:textColor="#66FFFFFF"
                                     android:text="Tuesday " />
 
                                 <RadioGroup
@@ -202,6 +220,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="8am-12pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -213,6 +233,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="1pm-5pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -224,6 +246,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="6pm-10pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -235,6 +259,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="11pm-3am"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -247,6 +273,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Free all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -258,6 +286,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Busy all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
                                 </RadioGroup>
@@ -271,6 +301,7 @@
                                     android:id="@+id/textView8"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:textColor="#66FFFFFF"
                                     android:text="Wednesday " />
 
                                 <RadioGroup
@@ -289,6 +320,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="8am-12pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -300,6 +333,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="1pm-5pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -311,6 +346,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="6pm-10pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -322,6 +359,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="11pm-3am"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -334,6 +373,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Free all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -345,6 +386,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Busy all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
                                 </RadioGroup>
@@ -358,6 +401,7 @@
                                     android:id="@+id/textView19"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:textColor="#66FFFFFF"
                                     android:text="Thursday " />
 
                                 <RadioGroup
@@ -376,6 +420,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="8am-12pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -387,6 +433,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="1pm-5pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -398,6 +446,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="6pm-10pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -409,6 +459,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="11pm-3am"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -421,6 +473,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Free all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -432,6 +486,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Busy all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
                                 </RadioGroup>
@@ -445,6 +501,7 @@
                                     android:id="@+id/textView20"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:textColor="#66FFFFFF"
                                     android:text="Friday " />
 
                                 <RadioGroup
@@ -463,6 +520,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="8am-12pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -474,6 +533,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="1pm-5pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -485,6 +546,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="6pm-10pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -496,6 +559,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="11pm-3am"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -508,6 +573,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Free all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -519,6 +586,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Busy all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
                                 </RadioGroup>
@@ -532,6 +601,7 @@
                                     android:id="@+id/textView21"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:textColor="#66FFFFFF"
                                     android:text="Saturday " />
 
                                 <RadioGroup
@@ -550,6 +620,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="8am-12pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -561,6 +633,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="1pm-5pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -572,6 +646,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="6pm-10pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -583,6 +659,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="11pm-3am"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -595,6 +673,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Free all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -606,6 +686,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Busy all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
                                 </RadioGroup>
@@ -619,6 +701,7 @@
                                     android:id="@+id/textView9"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:textColor="#66FFFFFF"
                                     android:text="Sunday " />
 
                                 <RadioGroup
@@ -637,6 +720,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="8am-12pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -648,6 +733,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="1pm-5pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -659,6 +746,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="6pm-10pm"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -670,6 +759,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="11pm-3am"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -682,6 +773,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Free all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
@@ -693,6 +786,8 @@
                                         android:layoutDirection="rtl"
                                         android:scaleX=".7"
                                         android:scaleY=".7"
+                                        android:textColor="#66FFFFFF"
+                                        android:buttonTint="#66FFFFFF"
                                         android:text="Busy all day"
                                         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
                                 </RadioGroup>
@@ -708,6 +803,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="10dp"
+                android:textColor="#CCFFFFFF"
                 android:text="Work I can do (Select all that apply)" />
 
             <android.support.design.widget.TextInputLayout
@@ -734,6 +830,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Bar Staff and Bartending" />
                         </TableRow>
 
@@ -747,6 +845,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Cashier" />
                         </TableRow>
 
@@ -760,6 +860,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Cleaning" />
                         </TableRow>
 
@@ -773,6 +875,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Data Entry" />
                         </TableRow>
 
@@ -786,6 +890,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Desk Assistance" />
                         </TableRow>
 
@@ -799,6 +905,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Driving and Delivery" />
                         </TableRow>
 
@@ -812,6 +920,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Event Security" />
                         </TableRow>
 
@@ -825,6 +935,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Event Set-up/Break-down" />
                         </TableRow>
 
@@ -838,6 +950,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Food Services" />
                         </TableRow>
 
@@ -851,6 +965,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Moving" />
 
                         </TableRow>
@@ -865,6 +981,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
+                android:textColor="#CCFFFFFF"
                 android:text="Are you able to lift at least 50lbs?" />
 
             <android.support.design.widget.TextInputLayout
@@ -891,6 +1008,8 @@
                         android:layout_weight="1"
                         android:scaleX=".7"
                         android:scaleY=".7"
+                        android:textColor="#66FFFFFF"
+                        android:buttonTint="#66FFFFFF"
                         android:text="Yes" />
 
                     <RadioButton
@@ -900,6 +1019,8 @@
                         android:layout_weight="1"
                         android:scaleX=".7"
                         android:scaleY=".7"
+                        android:textColor="#66FFFFFF"
+                        android:buttonTint="#66FFFFFF"
                         android:text="No" />
                 </RadioGroup>
                 </LinearLayout>
@@ -910,6 +1031,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="1"
+                android:textColor="#CCFFFFFF"
                 android:text="How do you get around?" />
 
             <android.support.design.widget.TextInputLayout
@@ -938,6 +1060,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Car" />
                         </TableRow>
 
@@ -951,6 +1075,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Bike" />
                         </TableRow>
 
@@ -964,6 +1090,8 @@
                                 android:layout_height="wrap_content"
                                 android:scaleX=".7"
                                 android:scaleY=".7"
+                                android:textColor="#66FFFFFF"
+                                android:buttonTint="#66FFFFFF"
                                 android:text="Bus" />
                         </TableRow>
 

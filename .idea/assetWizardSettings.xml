@@ -18,12 +18,23 @@
                                 <PersistentState>
                                   <option name="children">
                                     <map>
+                                      <entry key="foregroundClipartAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="url" value="jar:file:/Applications/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/social/ic_sentiment_satisfied_black_24dp.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
                                       <entry key="foregroundImage">
                                         <value>
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="scalingPercent" value="78" />
+                                                <entry key="scalingPercent" value="68" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,10 +44,14 @@
                                   </option>
                                   <option name="values">
                                     <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="3da625" />
                                       <entry key="backgroundLayerName" value="ic_launcher_background" />
-                                      <entry key="foregroundImage" value="$PROJECT_DIR$/../../UZO_NEW_LOGO.png" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/uzo_icon.png" />
                                       <entry key="foregroundLayerName" value="ic_launcher_foreground" />
+                                      <entry key="legacyIconShape" value="CIRCLE" />
                                       <entry key="outputName" value="UZO_NEW_LOGO" />
+                                      <entry key="webIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
                                 </PersistentState>
