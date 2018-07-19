@@ -63,7 +63,7 @@ public class MyGigs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_gigs);
 
-        session=new Session(MyGigs.this);;
+        session=new Session(MyGigs.this);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 

@@ -196,10 +196,7 @@ public Job(int job_id ){
     public boolean equals(Object obj) {
         Job job2= (Job) obj;
 
-        if(job2.getJob_id()==job_id){
-            return true;
-        }
-        return false;
+        return job2.getJob_id() == job_id;
     }
 
     @Override

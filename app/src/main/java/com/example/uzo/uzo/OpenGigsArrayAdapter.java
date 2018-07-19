@@ -74,13 +74,13 @@ public class OpenGigsArrayAdapter  extends BaseExpandableListAdapter implements 
             convertView = infalInflater.inflate(R.layout.open_gigs_item, null);
         }
 
-        TextView txtListChild = (TextView) convertView
+        TextView txtListChild = convertView
                 .findViewById(R.id.Item);
         Button button= convertView.findViewById(R.id.SelectJob);
 
         txtListChild.setText(childText);
         if(isLastChild){
-            button.setVisibility(button.VISIBLE);
+            button.setVisibility(View.VISIBLE);
             Log.e("Last Child", "Child Text: " +childText+" Child Position"+childPosition+ " header"+this._listDataHeader.get(groupPosition)+" txtview "+txtListChild.getText());
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -134,7 +134,7 @@ public class OpenGigsArrayAdapter  extends BaseExpandableListAdapter implements 
                 }
             });
         }else{
-            button.setVisibility(button.GONE);
+            button.setVisibility(View.GONE);
 
         }
 
@@ -173,7 +173,7 @@ public class OpenGigsArrayAdapter  extends BaseExpandableListAdapter implements 
             convertView = infalInflater.inflate(R.layout.open_gigs_header, null);
         }
 
-        TextView lblListHeader = (TextView) convertView
+        TextView lblListHeader = convertView
                 .findViewById(R.id.lblListHeader);
 
         lblListHeader.setTypeface(null, Typeface.BOLD);

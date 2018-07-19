@@ -76,8 +76,8 @@ public class MyGigsArrayAdapter  extends BaseExpandableListAdapter implements Li
         Button clockOut= convertView.findViewById(R.id.ClockOut);
 
         if(isLastChild){
-            clockOut.setVisibility(clockOut.VISIBLE);
-            clockIn.setVisibility(clockIn.GONE);
+            clockOut.setVisibility(View.VISIBLE);
+            clockIn.setVisibility(View.GONE);
             Log.e("Clock-out", "clock-out");
             clockOut.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -128,9 +128,9 @@ public class MyGigsArrayAdapter  extends BaseExpandableListAdapter implements Li
                 }
             });
         }else{
-            clockOut.setVisibility(clockOut.GONE);
+            clockOut.setVisibility(View.GONE);
             Log.e("Clock-in", "clock-in");
-            clockIn.setVisibility(clockIn.VISIBLE);
+            clockIn.setVisibility(View.VISIBLE);
             clockIn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -214,7 +214,7 @@ public class MyGigsArrayAdapter  extends BaseExpandableListAdapter implements Li
             convertView = infalInflater.inflate(R.layout.my_gigs_header, null);
         }
 
-        TextView lblListHeader = (TextView) convertView
+        TextView lblListHeader = convertView
                 .findViewById(R.id.lblListHeaderMyGigs);
         lblListHeader.setTypeface(null, Typeface.BOLD);
         lblListHeader.setText(headerTitle);

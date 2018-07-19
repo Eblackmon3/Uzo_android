@@ -347,7 +347,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                 checkLogin.put("email", mEmail);
                 checkLogin.put("password",mPassword);
                 HTTPClient check= new HTTPClient();
-                checkLogin=(check.postJSONRetObject(checkLogin.toString(),"check_student_login"));
+                checkLogin=(HTTPClient.postJSONRetObject(checkLogin.toString(),"check_student_login"));
                 if(checkLogin.get("student_id")!=null) {
                     session=new Session(LoginActivity.this);
                     session.setuserID(checkLogin.get("student_id").toString());
